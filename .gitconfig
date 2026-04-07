@@ -1,3 +1,7 @@
+[user]
+	name = Octocat
+	email = octocat@users.noreply.github.com
+
 [alias]
 	who = shortlog -sn
 	lg = log --pretty=oneline --all --topo-order
