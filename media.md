@@ -12,6 +12,12 @@ ffmpeg -i $1 -i $pf -filter_complex "fps=$fps,paletteuse" -f gif - > "$1.gif"
 }
 ```
 
+## Download specific format combination from YouTube
+
+```sh
+yt-dlp -S vcodec:h264,acodec:m4a "YOUR_VIDEO_URL"
+```
+
 ## Download YouTube video as MP3
 
 ```sh
