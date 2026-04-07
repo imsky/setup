@@ -38,7 +38,9 @@ select current_database();
 select pg_size_pretty(pg_database_size('dbname'));
 ```
 
-## Create a GIF from video
+## Media
+
+### Create a GIF from video
 
 ```sh
 vid2gif () {
@@ -50,19 +52,19 @@ ffmpeg -i $1 -i $pf -filter_complex "fps=$fps,paletteuse" -f gif - > "$1.gif"
 }
 ```
 
-## Download specific format combination from YouTube
+### Download specific format combination from YouTube
 
 ```sh
 yt-dlp -S vcodec:h264,acodec:m4a "YOUR_VIDEO_URL"
 ```
 
-## Download YouTube video as MP3
+### Download YouTube video as MP3
 
 ```sh
 yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 320k --embed-thumbnail -o '%(title)s.%(ext)s' https://www.youtube.com/watch?v=mUQHGpxrz-8
 ```
 
-## Convert M4A to Mp3
+### Convert M4A to Mp3
 
 ```sh
 ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 4 output.mp3
