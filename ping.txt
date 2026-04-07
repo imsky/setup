@@ -1,0 +1,9 @@
+# Domains to ping
+# grep -E '^[a-z\.]' ping.txt | xargs -n1 -P6 ping -c 10
+
+iu.edu
+w3.org
+mcom.com
+mit.edu
+eff.org
+ibm.com
